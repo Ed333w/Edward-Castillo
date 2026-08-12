@@ -1,0 +1,5 @@
+La salida final del código des pues de las 8 iteraciones, 
+
+la salida esperada es que a partir de cada iteración comparando el numero de esa iteración con el de base que es como la referencia va guardando el numero que va siendo mayor y el que va siendo menor hasta terminar las iteraciones, al final de las iteraciones muestra el ultimo valor guardado y el promedio calculado. 
+
+n = 8 esta mal declarado porque comenzamos la iteración desde 0 entonces si n = 8 quiere decir que haríamos 9 iteraciones y eso es falso, se debería declarar n = 7 para que quede bien declarado.
