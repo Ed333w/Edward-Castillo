@@ -4,7 +4,7 @@ v = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 #busquedas secuanciales - BusquedasBinarias
 def binaria(v, x):
     izq, der = 0, len(v) - 1
-    comparaciones = 0
+    comparaciones = 1
     while izq <= der:
         medio = (izq + der) // 2
         comparaciones += 1
@@ -19,7 +19,7 @@ def binaria(v, x):
 from typing import Sequence
 
 def secuencial(v: Sequence[int], x: int) -> int:
-    comparaciones = 0
+    comparaciones = 1
     for i in range(len(v)):
         comparaciones += 1
         if v[i] == x:
