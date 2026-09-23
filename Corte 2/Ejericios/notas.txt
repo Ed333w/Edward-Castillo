@@ -8,7 +8,7 @@ def suma(v):
     for x in v: s+= x
     return s
 
-c (cuadratica)
+c (cuadratico)
 def pares(v):
 c = 0 
 for x in v:
@@ -25,7 +25,7 @@ def mitad(v,x):
         else: der = m -1
     return -1
 
-e 
+e (cuadratico)
 def engañoso(v)
     for i in range(len(v)):
         for j in range(5):
@@ -34,3 +34,37 @@ def engañoso(v)
 
 #Clasificar la complejidad de todos los algoritmos de ordenamiento de clases que vimos 
 
+metodo: bubble_sort
+    que hace: Ordena haciendo comparacion con los elemtos de los lados y haciendo cambios cuando cree que estan en el orden incorrecto
+    big O: 
+    por que?: 
+
+metodo: selection_sort
+    que hace: Busca el elemento menor y lo pone el la posicion correspondiente y asi sucesivamente hasta ordenar el arrelgo
+    big O: O(n^2) - cuadratica
+    por que?: hace el recorrido completo del arreglo, esperando encontrar el minimo hasta el final 
+
+metodo: insertion_sort
+    que hace: Inserta cada elemento en la posición correcta dentro de la parte ya ordenada
+    big O: O(n^2) - cuadratica
+    por que?: le peude tocar hacer un recorrido completo donde cada elemento le toque desplazarse por todas las posiciones anteriores
+
+metodo: merge_sort
+    que hace: Hace una division del arrlego en mitades, despues ordena las dos mitades y luego las combina
+    big O: O(n log n)
+    por que?: hay log n niveles de division y en cada nivel se procesa n elementos
+
+metodo: quick_sort
+    que hace: Divide el arreglo alrededor de un pivote y ordena recursivamente las partes
+    big O: 
+    por que?: 
+
+metodo: heapify
+    que hace: 
+    big O: 
+    por que?: 
+
+metodo: bucket_sort
+    que hace: 
+    big O: 
+    por que?: 
