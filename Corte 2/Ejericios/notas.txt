@@ -1,0 +1,36 @@
+A (constante)
+def primero (v):
+    return v[0]
+
+b (lineal)
+def suma(v):
+    s=0
+    for x in v: s+= x
+    return s
+
+c (cuadratica)
+def pares(v):
+c = 0 
+for x in v:
+    for y in v: c += 1
+return c
+
+d (cuadratico ** )
+def mitad(v,x):
+    izq, der = 0, len(v) -1
+    while izq <= der:
+        m = (izq + der) // 2
+        if v[m] == x: return m
+        elif v[m] < x: izq = m+1
+        else: der = m -1
+    return -1
+
+e 
+def engañoso(v)
+    for i in range(len(v)):
+        for j in range(5):
+            print(v[i],j)
+
+
+#Clasificar la complejidad de todos los algoritmos de ordenamiento de clases que vimos 
+
