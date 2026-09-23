@@ -51,20 +51,20 @@ metodo: insertion_sort
 
 metodo: merge_sort
     que hace: Hace una division del arrlego en mitades, despues ordena las dos mitades y luego las combina
-    big O: O(n log n)
+    big O: O(n log n) - logaritmica lineal
     por que?: hay log n niveles de division y en cada nivel se procesa n elementos
 
 metodo: quick_sort
-    que hace: Divide el arreglo alrededor de un pivote y ordena recursivamente las partes
-    big O: 
-    por que?: 
+    que hace: Escoge un elemento llamado pivote y separa los números en tres grupos: menores, iguales y mayores. Luego repite lo mismo con los grupos de menores y mayores hasta que todo quede ordenado.
+    big O: O(n log n) - logaritmica lineal
+    por que?: Con particiones equilibradas hay log n niveles, si se desbalancea puede llegar a n niveles
 
 metodo: heapify
-    que hace: 
-    big O: 
+    que hace: Organiza los datos como si fueran un árbol, donde el número más grande queda arriba. Luego va sacando ese número y reorganizando el árbol hasta ordenar todo.
+    big O: O(log n) - logaritmica
     por que?: 
 
 metodo: bucket_sort
-    que hace: 
-    big O: 
-    por que?: 
+    que hace: Reparte los números en varios grupos o baldes según su valor. Después ordena cada grupo y finalmente junta todos los grupos en orden.
+    big O: O(n) - lineal, O(n log n) - logaritmica lineal
+    por que?: Primero recorre los n elementos para repartirlos en buckets, lo cual cuesta O(n). Si los elementos quedan bien repartidos, cada bucket tiene pocos datos y ordenarlos es rápido, por eso el comportamiento promedio se aproxima a O(n). Pero si muchos elementos caen en el mismo bucket, ese bucket puede contener casi n elementos y sorted() debe ordenarlos, lo que puede costar O(n log n).
