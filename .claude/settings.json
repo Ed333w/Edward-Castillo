@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmd /c \"build.bat\" 2>&1)",
+      "PowerShell(.\\\\zzz_prueba.bat)",
+      "PowerShell(& \"C:\\\\Program Files \\(x86\\)\\\\Inno Setup 6\\\\ISCC.exe\" \"instalador\\\\RecibosApp.iss\")",
+      "PowerShell(Get-Item \"instalador\\\\Output\\\\RecibosApp_Setup.exe\" | Select-Object Name, @{n=\"MB\";e={[math]::Round\\($_.Length/1MB,1\\)}})",
+      "PowerShell(Get-ChildItem -Recurse \"$env:LOCALAPPDATA\\\\Programs\\\\RecibosApp\\\\data\" -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(python _test_captura2.py 2>&1)",
+      "PowerShell(python _test_funcional.py)"
+    ]
+  }
+}

@@ -12,7 +12,8 @@ ocupacion = [
     [3, 3, 3, 0, 0, 5],
 ]
 
-def total_por_punto(m):  #este metodo recorre la matriz y suma los valores de cada fila, que representan los puntos de acopio, y devuelve una lista con el total recogido por cada punto.
+def total_por_punto(m):  #este metodo recorre la matriz y suma los valores de cada fila, 
+                            #que representan los puntos de acopio, y devuelve una lista con el total recogido por cada punto.
     """Devuelve una lista con el total recogido por cada punto (fila)."""
     totales = []         # inicializa una lista vacia para almacenar los totales por punto
     for fila in m:       # recorre cada fila de la matriz

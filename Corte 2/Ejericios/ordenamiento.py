@@ -68,12 +68,12 @@ def insertion_sort(arr):
 
 print("Bubble Sort:")
 sorted_arr, tiempo, comparaciones, intercambios = medir_tiempo(bubble_sort, datos)
-print(f"Comparaciones: {comparaciones}, Intercambios: {intercambios}, Tiempo: {tiempo:.6f} segundos\n")
+print(f"Comparaciones: {comparaciones}, Intercambios: {intercambios}, Tiempo: {tiempo:.7f} segundos\n")
 
 print("Selection Sort:")
 sorted_arr, tiempo, comparaciones, intercambios = medir_tiempo(selection_sort, datos)
-print(f"Comparaciones: {comparaciones}, Intercambios: {intercambios}, Tiempo: {tiempo:.6f} segundos\n")
+print(f"Comparaciones: {comparaciones}, Intercambios: {intercambios}, Tiempo: {tiempo:.7f} segundos\n")
 
 print("Insertion Sort:")
 sorted_arr, tiempo, comparaciones, intercambios = medir_tiempo(insertion_sort, datos)
-print(f"Comparaciones: {comparaciones}, Intercambios: {intercambios}, Tiempo: {tiempo:.6f} segundos\n")
+print(f"Comparaciones: {comparaciones}, Intercambios: {intercambios}, Tiempo: {tiempo:.7f} segundos\n")

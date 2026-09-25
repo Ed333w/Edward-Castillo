@@ -63,6 +63,7 @@ int main() {
     delete[] equipos;
     delete[] totales;
 
+
     return 0;
 }
 

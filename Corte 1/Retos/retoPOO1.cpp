@@ -57,3 +57,7 @@ int main() {
     cout << p.mayorEdad() << endl;
     return 0;
 }
+
+//cd "Corte 1"
+//g++ -std=c++17 retoPOO1.cpp -o retoPOO1.exe
+//.\retoPOO1.exe

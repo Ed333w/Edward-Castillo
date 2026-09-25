@@ -30,41 +30,37 @@ class Fila:
             actual = actual.siguiente
         actual.siguiente = nuevo
 
-    def retirar(self, turno):
-        """Elimina de la fila a la persona con ese turno.
-           Devuelve True si la elimino, False si no estaba.
-           BUG P0: revise los tres casos."""
-        if self.cabeza is None:
-            return False
-        #if self.cabeza.turno == turno:
-        #    self.cabeza = None                 # <-- caso 1
-        #    return True
-        #anterior = self.cabeza
-        #while anterior.siguiente is not None:
-        #    if anterior.siguiente.turno == turno:
-        #        anterior.siguiente = anterior.siguiente   # <-- caso 2
-        #        return True
-        #    anterior = anterior.siguiente
-        #return False
+#    def retirar(self, turno):
+#        """Elimina de la fila a la persona con ese turno.
+#           Devuelve True si la elimino, False si no estaba.
+#           BUG P0: revise los tres casos."""
+#        if self.cabeza is None:
+#            return False
+#        if self.cabeza.turno == turno:
+#            self.cabeza = None                 # <-- caso 1
+#            return True
+#        anterior = self.cabeza
+#        while anterior.siguiente is not None:
+#            if anterior.siguiente.turno == turno:
+#                anterior.siguiente = anterior.siguiente   # <-- caso 2
+#                return True
+#            anterior = anterior.siguiente
+#        return False
 
-        def retirar_primero(self):
-            """Elimina de la fila a la primera persona.
+    def retirar_primero(self):
+        """Elimina de la fila a la primera persona.
            Devuelve True si la elimino, False si estaba vacia."""
         if self.cabeza.turno is None:
             return False
-        self.cabeza = self.cabeza.siguiente
-        return True
-    
-        while self.cabeza is not None:
-            if self.cabeza.turno == turno:
-                self.cabeza = self.cabeza.siguiente
+        self.cabeza.turno == None
+
+        while anterior.siguiente is not None:
+            if anterior.siguiente.turno == turno: # type: ignore
+                anterior.siguiente = anterior.siguiente   # <-- caso 2
                 return True
-            actual = self.cabeza
-            while actual.siguiente is not None:
-                if actual.siguiente.turno == turno:
-                    actual.siguiente = actual.siguiente.siguiente
-                    return True
-                actual = actual.siguiente
+            anterior = anterior.siguiente
+        return False
+
 
     def cuantos(self):
         """Devuelve cuantas personas hay en la fila."""
@@ -74,6 +70,7 @@ class Fila:
             n += 1
             actual = actual.siguiente
         return n
+       
 
     def listar(self):
         r = []
@@ -82,5 +79,7 @@ class Fila:
             r.append(actual.turno)
             actual = actual.siguiente
         return r
+        print(r)
+
 
 
