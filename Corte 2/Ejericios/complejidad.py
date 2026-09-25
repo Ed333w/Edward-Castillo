@@ -6,12 +6,6 @@
 # Paso 4: avanzar al siguiente par y repetir hasta llegar al final de la lista (eso es una pasada)
 # Paso 5: repetir las pasadas hasta que en una pasada no se haga ningun intercambio (la lista ya esta ordenada)
 
-# ejemplo con [4, 2, 5, 1]
-# pasada 1: [2, 4, 1, 5]  -> el 5 (el mayor) queda al final
-# pasada 2: [2, 1, 4, 5]
-# pasada 3: [1, 2, 4, 5]
-# pasada 4: no hubo intercambios, termina
-
 #1 ¿que es n en esa secuencia?
 # n es la cantidad de notas (elementos) que tiene la lista que se va a ordenar.
 
