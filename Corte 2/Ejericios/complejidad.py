@@ -1,22 +1,28 @@
 #anotar una secuencia de pasos de un algoritmo
-#buscar el usuario en la plataforma, revisar si esta, si no esta registrarlo
-# Paso 1: recibir el nombre del usuario
-# Paso 2: recorrer la lista de usuarios registrados uno por uno
-# Paso 3: comparar cada usuario con el que se busca
-# Paso 4: si se encuentra, decir que ya esta registrado y terminar
-# Paso 5: si se recorre toda la lista y no aparece, agregarlo (registrarlo)
+#ordenar las notas de los estudiantes de menor a mayor (ordenamiento burbuja)
+# Paso 1: recibir la lista de notas
+# Paso 2: comparar la primera nota con la que sigue
+# Paso 3: si la primera es mayor, intercambiarlas de posicion
+# Paso 4: avanzar al siguiente par y repetir hasta llegar al final de la lista (eso es una pasada)
+# Paso 5: repetir las pasadas hasta que en una pasada no se haga ningun intercambio (la lista ya esta ordenada)
+
+# ejemplo con [4, 2, 5, 1]
+# pasada 1: [2, 4, 1, 5]  -> el 5 (el mayor) queda al final
+# pasada 2: [2, 1, 4, 5]
+# pasada 3: [1, 2, 4, 5]
+# pasada 4: no hubo intercambios, termina
 
 #1 ¿que es n en esa secuencia?
-# n es la cantidad de usuarios que ya estan registrados en la plataforma, porque es la cantidad de elementos que hay que recorrer para buscar al usuario.
+# n es la cantidad de notas (elementos) que tiene la lista que se va a ordenar.
 
 #2 cuantas veces se ejecuta el proceso si se duplican los datos?
-# en el peor caso (el usuario no esta) la busqueda compara con todos, o sea n veces. si se duplican los datos (2n), la busqueda tambien se duplica: 2n comparaciones.
+# en el peor caso se hacen n pasadas y en cada pasada se comparan casi n pares, o sea n * n = n² comparaciones. si se duplican los datos (2n), las comparaciones pasan a (2n)² = 4n², es decir, el trabajo se multiplica por 4, no por 2.
 
 #3 Dentro de esa secuencia se involucra otro proceso?
-# si, se involucran dos procesos:
-# - buscar: recorrer y comparar usuario por usuario -> O(n)
-# - registrar: agregar el usuario al final de la lista -> O(1)
-# el que manda es la busqueda, asi que el algoritmo completo es O(n).
+# si, dentro de cada pasada hay otro proceso: comparar cada par de notas vecinas y, si estan en desorden, intercambiarlas.
+# - pasadas: ciclo externo -> se repite n veces
+# - comparar e intercambiar: ciclo interno -> se repite n veces por cada pasada
+# como es un ciclo dentro de otro ciclo (anidado), el total es n * n = O(n²).
 
 #4 Que tipo de estructura de datos se utiliza?
-# una lista (arreglo) para guardar los usuarios registrados.
+# una lista (arreglo), porque se accede a cada nota por su posicion (indice) para compararla con la de al lado e intercambiarlas.
