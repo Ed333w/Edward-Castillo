@@ -1,4 +1,6 @@
-# Sesion 40 — Grafos: matriz de adyacencia frente a lista de adyacencia
+
+#Quiz 6 de Noviembre 2026
+
 from collections import deque
 
 NOMBRES = ["CENTRO","NORTE","SUR","ORIENTE","OCCIDENTE",
