@@ -1,0 +1,73 @@
+============================================================
+ LABORATORIO INTEGRADOR - CORTE 3
+ Arboles y grafos - Sesiones 35 a 43
+ Algoritmos y Estructura de Datos - Codigo 11310006 - Grupo G1
+ Universidad del Rosario
+============================================================
+
+ 60 MINUTOS - NIVEL INTERMEDIO - 4 RETOS DE 25 PUNTOS CADA UNO
+
+QUE HAY EN ESTA CARPETA
+
+  R1/indice.py         Reto 1 - Python  - BST            <- MODIFIQUE ESTE
+  R1/pruebas_r1.py     verificacion                      <- NO LO TOQUE
+
+  R2/balanceo.cpp      Reto 2 - C++     - AVL            <- MODIFIQUE ESTE
+  R2/avl.h             declaraciones                     <- NO LO TOQUE
+  R2/pruebas_r2.cpp    verificacion                      <- NO LO TOQUE
+
+  R3/rutas.py          Reto 3 - Python  - BFS            <- MODIFIQUE ESTE
+  R3/pruebas_r3.py     verificacion                      <- NO LO TOQUE
+
+  R4/conectividad.cpp  Reto 4 - C++     - DFS            <- MODIFIQUE ESTE
+  R4/red.h             datos de la red                   <- NO LO TOQUE
+  R4/pruebas_r4.cpp    verificacion                      <- NO LO TOQUE
+
+  verificar.sh         ejecuta los cuatro retos (Linux / macOS)
+  verificar.bat        ejecuta los cuatro retos (Windows)
+
+COMO EJECUTAR
+
+  Los cuatro de una vez:
+      Linux / macOS:   bash verificar.sh
+      Windows:         verificar.bat
+
+  Uno solo:
+      Linux / macOS:   bash verificar.sh R3
+      Windows:         verificar.bat R3
+
+  O manualmente, dentro de la carpeta del reto:
+      python3 pruebas_r1.py
+      g++ -std=c++17 -g -o pruebas_r2 balanceo.cpp pruebas_r2.cpp && ./pruebas_r2
+      python3 pruebas_r3.py
+      g++ -std=c++17 -g -o pruebas_r4 conectividad.cpp pruebas_r4.cpp && ./pruebas_r4
+
+CUANDO UN RETO QUEDA RESUELTO
+
+  Las pruebas imprimen una linea como esta:
+
+      RETO 1 CERRADO - codigo de cierre: 3301-XXXXXX
+
+  Ese codigo NO esta escrito en ningun archivo: se calcula a partir de
+  los resultados correctos. Copielo en la hoja de respuestas.
+
+ORDEN SUGERIDO Y TIEMPO
+
+  R1 BST .................. 12 min   sesiones 35 y 36
+  R2 AVL .................. 12 min   sesiones 37 y 38
+  R3 BFS .................. 12 min   sesiones 40 y 42
+  R4 DFS .................. 12 min   sesiones 41 y 43
+
+  Los cuatro valen lo mismo. Si uno se le atraviesa, pase al siguiente.
+
+REGLAS
+
+  - Trabajo en parejas. Las dos personas deben poder explicar el codigo.
+  - Permitido: sus propios apuntes, el repositorio del curso y la
+    documentacion oficial de C++ y de Python.
+  - No permitido: codigo de otras parejas ni asistentes de inteligencia
+    artificial.
+  - Los archivos pruebas_*, avl.h y red.h NO se pueden modificar.
+    Alterarlos se considera fraude academico segun la seccion 13 de la
+    guia de asignatura.
+============================================================
