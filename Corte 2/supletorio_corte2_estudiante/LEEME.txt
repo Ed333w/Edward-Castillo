@@ -1,0 +1,80 @@
+============================================================
+ SUPLETORIO - SEGUNDO CORTE
+ Algoritmos y Estructura de Datos - Codigo 11310006 - Grupo G1
+ Universidad del Rosario
+============================================================
+
+ 90 MINUTOS - NIVEL MEDIO-ALTO - 5 EJERCICIOS DE 20 PUNTOS
+
+QUE HAY EN ESTA CARPETA
+
+  E1/seleccion.py     Recursion y backtracking  - Python  <- MODIFIQUE
+  E1/pruebas_e1.py    verificacion                        <- NO LO TOQUE
+
+  E2/rangos.cpp       Busqueda binaria          - C++     <- MODIFIQUE
+  E2/rangos.h         declaraciones                       <- NO LO TOQUE
+  E2/pruebas_e2.cpp   verificacion                        <- NO LO TOQUE
+
+  E3/orden.py         Ordenamiento y complejidad- Python  <- MODIFIQUE
+  E3/pruebas_e3.py    verificacion                        <- NO LO TOQUE
+
+  E4/turnos.cpp       Cola circular             - C++     <- MODIFIQUE
+  E4/turnos.h         declaraciones de la clase           <- NO LO TOQUE
+  E4/pruebas_e4.cpp   verificacion                        <- NO LO TOQUE
+
+  E5/tabla.py         Tabla hash                - Python  <- MODIFIQUE
+  E5/pruebas_e5.py    verificacion                        <- NO LO TOQUE
+
+  verificar.sh        ejecuta los cinco (Linux / macOS)
+  verificar.bat       ejecuta los cinco (Windows)
+
+COMO EJECUTAR
+
+  Los cinco:      bash verificar.sh        /  verificar.bat
+  Uno solo:       bash verificar.sh E3     /  verificar.bat E3
+
+  O a mano, dentro de la carpeta del ejercicio:
+      python3 pruebas_e1.py
+      g++ -std=c++17 -O1 -g -o pruebas_e2 rangos.cpp pruebas_e2.cpp && ./pruebas_e2
+      python3 pruebas_e3.py
+      g++ -std=c++17 -g -o pruebas_e4 turnos.cpp pruebas_e4.cpp && ./pruebas_e4
+      python3 pruebas_e5.py
+
+CUANDO UN EJERCICIO QUEDA RESUELTO
+
+  Las pruebas imprimen:   EJERCICIO 1 CERRADO - codigo de cierre: 2251-XXXX
+  Ese codigo no esta escrito en ningun archivo: se calcula a partir de
+  los resultados correctos. Copielo en la hoja de respuestas.
+
+DOS AVISOS IMPORTANTES
+
+  1. Los ejercicios 2 y 3 verifican la COMPLEJIDAD, no solo el resultado.
+     Una solucion que funcione pero recorra los datos de forma lineal
+     (E2) o cuadratica (E3) pasa las pruebas pequenas y FALLA el control
+     de complejidad. Lea los comentarios del enunciado.
+
+  2. En el ejercicio 5 no use dict ni set para resolverlo: el punto es
+     implementar el mecanismo de la tabla hash, no usar el que ya trae
+     el lenguaje.
+
+TIEMPO SUGERIDO
+
+  E1 recursion y backtracking .... 18 min
+  E2 busqueda binaria ............ 16 min
+  E3 ordenamiento ................ 18 min
+  E4 cola circular ............... 20 min
+  E5 tabla hash .................. 18 min
+
+  Los cinco valen lo mismo. Si uno se atraviesa, pase al siguiente.
+
+REGLAS
+
+  - Prueba individual, en computador.
+  - Permitido: sus apuntes, el repositorio del curso y la documentacion
+    oficial de C++ y de Python.
+  - No permitido: codigo de companeros ni asistentes de inteligencia
+    artificial.
+  - Los archivos pruebas_*, rangos.h y turnos.h NO se pueden modificar.
+    Alterarlos se considera fraude academico segun la seccion 13 de la
+    guia de asignatura.
+============================================================
